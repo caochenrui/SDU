@@ -1,0 +1,549 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Apr  5 10:23:33 2023
+# Process ID: 15804
+# Current directory: D:/code/project_9
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13328 D:\code\project_9\project_9.xpr
+# Log file: D:/code/project_9/vivado.log
+# Journal file: D:/code/project_9\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/code/project_9/project_9.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1446.445 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.1
+  **** Build date : Jun 10 2021 at 20:17:23
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.1
+  ****** Build date   : May 27 2021-01:32:33
+    **** Build number : 2021.1.1622050353
+      ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1446.445 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF45DA
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2780.734 ; gain = 1334.289
+set_property PROGRAM.FILE {D:/code/project_9/project_9.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/code/project_9/project_9.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/code/project_9/project_9.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/code/project_9/project_9.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci' is already up-to-date
+[Wed Apr  5 11:04:02 2023] Launched synth_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/synth_1/runme.log
+[Wed Apr  5 11:04:02 2023] Launched impl_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/project_9/project_9.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/project_9/project_9.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/project_9/project_9.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/code/project_9/project_9.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/code/project_9/project_9.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/code/project_9/project_9.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci' is already up-to-date
+[Wed Apr  5 11:23:18 2023] Launched synth_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/synth_1/runme.log
+[Wed Apr  5 11:23:18 2023] Launched impl_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/code/project_9/project_9.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/code/project_9/project_9.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/code/project_9/project_9.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci' is already up-to-date
+[Wed Apr  5 11:28:15 2023] Launched synth_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/synth_1/runme.log
+[Wed Apr  5 11:28:15 2023] Launched impl_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/project_9/project_9.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/code/project_9/project_9.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/code/project_9/project_9.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/code/project_9/project_9.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci' is already up-to-date
+[Wed Apr  5 11:35:11 2023] Launched synth_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/synth_1/runme.log
+[Wed Apr  5 11:35:11 2023] Launched impl_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/project_9/project_9.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/project_9/project_9.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/code/project_9/project_9.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/code/project_9/project_9.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/code/project_9/project_9.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci' is already up-to-date
+[Wed Apr  5 12:02:15 2023] Launched synth_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/synth_1/runme.log
+[Wed Apr  5 12:02:15 2023] Launched impl_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/code/project_9/project_9.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Apr  5 12:03:26 2023] Launched synth_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/synth_1/runme.log
+[Wed Apr  5 12:03:26 2023] Launched impl_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/code/project_9/project_9.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/code/project_9/project_9.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/code/project_9/project_9.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci' is already up-to-date
+[Wed Apr  5 12:04:08 2023] Launched synth_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/synth_1/runme.log
+[Wed Apr  5 12:04:08 2023] Launched impl_1...
+Run output will be captured here: D:/code/project_9/project_9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/project_9/project_9.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/project_9/project_9.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/project_9/project_9.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292ABF45DA
+close_project
+open_project D:/code/project_8/project_8.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SDU.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/code/project_8/project_8.srcs/sources_1/imports/new/REG.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.1
+  **** Build date : Jun 10 2021 at 20:17:23
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.1
+  ****** Build date   : May 27 2021-01:32:33
+    **** Build number : 2021.1.1622050353
+      ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 2927.727 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF45DA
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292ABF45DA.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/project_8/project_8.runs/impl_1/main 0329 2147.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: main
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 3491.617 ; gain = 274.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [D:/code/project_8/project_8.srcs/sources_1/imports/new/main.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Serial_Debug_Unit' [D:/code/project_8/project_8.srcs/sources_1/imports/new/Serial_Debug_Unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'I_O' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/I_O.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SCAN' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SCAN.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SCAN' (1#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SCAN.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PRINT' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/PRINT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PRINT' (2#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/PRINT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RX' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RX' (3#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TX' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SOR' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SOR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SOR' (4#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SOR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CNT' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/CNT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CNT' (5#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/CNT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RDY' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RDY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RDY' (6#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RDY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TX' (7#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/TX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'I_O' (8#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/I_O.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PRDI' [D:/code/project_8/project_8.srcs/sources_1/imports/new/PRDI.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/PRDI.v:204]
+INFO: [Synth 8-6155] done synthesizing module 'PRDI' (9#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/PRDI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSMLOAD' [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:126]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'FSMLOAD' (10#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cpu_control_unit' [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:87]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:187]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_control_unit' (11#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/Serial_Debug_Unit.v:153]
+INFO: [Synth 8-6155] done synthesizing module 'Serial_Debug_Unit' (12#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/Serial_Debug_Unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (13#1) [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (12) of module 'dist_mem_gen_0' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:75]
+WARNING: [Synth 8-689] width (32) of port connection 'dpra' does not match port width (12) of module 'dist_mem_gen_0' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:77]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_1' [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_1' (14#1) [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (10) of module 'dist_mem_gen_1' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:94]
+WARNING: [Synth 8-689] width (32) of port connection 'dpra' does not match port width (10) of module 'dist_mem_gen_1' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (15#1) [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'main' (16#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/main.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 3552.086 ; gain = 334.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 3569.926 ; gain = 352.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 3569.926 ; gain = 352.398
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/project_8/project_8.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp' for cell 'nolabel_line22/nolabel_line74'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/project_8/project_8.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.dcp' for cell 'nolabel_line22/nolabel_line93'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 3602.469 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1600 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/code/project_8/project_8.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/code/project_8/project_8.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3710.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1280 instances were transformed.
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 1280 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 3861.918 ; gain = 644.391
+48 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 3861.918 ; gain = 926.391
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/project_8/project_8.runs/impl_1/main 0329 2147.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3882.785 ; gain = 16.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [D:/code/project_8/project_8.srcs/sources_1/imports/new/main.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Serial_Debug_Unit' [D:/code/project_8/project_8.srcs/sources_1/imports/new/Serial_Debug_Unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'I_O' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/I_O.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SCAN' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SCAN.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SCAN' (1#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SCAN.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PRINT' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/PRINT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PRINT' (2#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/PRINT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RX' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RX' (3#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TX' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SOR' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SOR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SOR' (4#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SOR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CNT' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/CNT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CNT' (5#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/CNT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RDY' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RDY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RDY' (6#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RDY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TX' (7#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/TX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'I_O' (8#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/I_O.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PRDI' [D:/code/project_8/project_8.srcs/sources_1/imports/new/PRDI.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/PRDI.v:204]
+INFO: [Synth 8-6155] done synthesizing module 'PRDI' (9#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/PRDI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSMLOAD' [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:126]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'FSMLOAD' (10#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cpu_control_unit' [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:87]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:187]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_control_unit' (11#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/Serial_Debug_Unit.v:153]
+INFO: [Synth 8-6155] done synthesizing module 'Serial_Debug_Unit' (12#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/Serial_Debug_Unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (13#1) [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (12) of module 'dist_mem_gen_0' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:75]
+WARNING: [Synth 8-689] width (32) of port connection 'dpra' does not match port width (12) of module 'dist_mem_gen_0' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:77]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_1' [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_1' (14#1) [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (10) of module 'dist_mem_gen_1' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:94]
+WARNING: [Synth 8-689] width (32) of port connection 'dpra' does not match port width (10) of module 'dist_mem_gen_1' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:96]
+ERROR: [Synth 8-91] ambiguous clock in event control [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:105]
+ERROR: [Synth 8-6156] failed synthesizing module 'CPU' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'main' [D:/code/project_8/project_8.srcs/sources_1/imports/new/main.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3915.645 ; gain = 49.504
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+refresh_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3915.684 ; gain = 49.543
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3933.578 ; gain = 13.867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [D:/code/project_8/project_8.srcs/sources_1/imports/new/main.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Serial_Debug_Unit' [D:/code/project_8/project_8.srcs/sources_1/imports/new/Serial_Debug_Unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'I_O' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/I_O.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SCAN' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SCAN.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SCAN' (1#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SCAN.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PRINT' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/PRINT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PRINT' (2#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/PRINT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RX' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RX' (3#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TX' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SOR' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SOR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SOR' (4#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SOR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CNT' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/CNT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CNT' (5#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/CNT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RDY' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RDY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RDY' (6#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RDY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TX' (7#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/TX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'I_O' (8#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/I_O.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PRDI' [D:/code/project_8/project_8.srcs/sources_1/imports/new/PRDI.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/PRDI.v:204]
+INFO: [Synth 8-6155] done synthesizing module 'PRDI' (9#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/PRDI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSMLOAD' [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:126]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'FSMLOAD' (10#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cpu_control_unit' [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:87]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:187]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_control_unit' (11#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/Serial_Debug_Unit.v:153]
+INFO: [Synth 8-6155] done synthesizing module 'Serial_Debug_Unit' (12#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/Serial_Debug_Unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (13#1) [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (12) of module 'dist_mem_gen_0' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:75]
+WARNING: [Synth 8-689] width (32) of port connection 'dpra' does not match port width (12) of module 'dist_mem_gen_0' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:77]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_1' [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_1' (14#1) [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (10) of module 'dist_mem_gen_1' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:94]
+WARNING: [Synth 8-689] width (32) of port connection 'dpra' does not match port width (10) of module 'dist_mem_gen_1' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (15#1) [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'main' (16#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/main.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3933.578 ; gain = 13.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3949.383 ; gain = 29.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3949.383 ; gain = 29.672
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/project_8/project_8.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp' for cell 'nolabel_line22/nolabel_line74'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/project_8/project_8.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.dcp' for cell 'nolabel_line22/nolabel_line93'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 3973.035 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1600 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/code/project_8/project_8.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/code/project_8/project_8.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 3973.035 ; gain = 53.758
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292ABF45DA
+refresh_design
+ERROR: [Synth 8-2715] syntax error near { [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:189]
+ERROR: [Synth 8-2715] syntax error near } [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:189]
+INFO: [Synth 8-2350] module CPU ignored due to previous errors [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:3]
+Failed to read verilog 'D:/code/project_8/project_8.srcs/sources_1/new/CPU.v'
+refresh_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 3973.035 ; gain = 0.000
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3973.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [D:/code/project_8/project_8.srcs/sources_1/imports/new/main.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Serial_Debug_Unit' [D:/code/project_8/project_8.srcs/sources_1/imports/new/Serial_Debug_Unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'I_O' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/I_O.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SCAN' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SCAN.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SCAN' (1#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SCAN.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PRINT' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/PRINT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PRINT' (2#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/PRINT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RX' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RX' (3#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TX' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SOR' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SOR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SOR' (4#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/SOR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CNT' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/CNT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CNT' (5#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/CNT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RDY' [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RDY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RDY' (6#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/RDY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TX' (7#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/TX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'I_O' (8#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/IO/I_O.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PRDI' [D:/code/project_8/project_8.srcs/sources_1/imports/new/PRDI.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/PRDI.v:204]
+INFO: [Synth 8-6155] done synthesizing module 'PRDI' (9#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/PRDI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSMLOAD' [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:126]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'FSMLOAD' (10#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/FSMLOAD_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cpu_control_unit' [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:87]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:187]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_control_unit' (11#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/cpu_control_unit-v0.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_8/project_8.srcs/sources_1/imports/new/Serial_Debug_Unit.v:153]
+INFO: [Synth 8-6155] done synthesizing module 'Serial_Debug_Unit' (12#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/Serial_Debug_Unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (13#1) [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (12) of module 'dist_mem_gen_0' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:75]
+WARNING: [Synth 8-689] width (32) of port connection 'dpra' does not match port width (12) of module 'dist_mem_gen_0' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:77]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_1' [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_1' (14#1) [D:/code/project_9/.Xil/Vivado-15804-LAPTOP-FUP56MSR/realtime/dist_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (10) of module 'dist_mem_gen_1' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:94]
+WARNING: [Synth 8-689] width (32) of port connection 'dpra' does not match port width (10) of module 'dist_mem_gen_1' [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (15#1) [D:/code/project_8/project_8.srcs/sources_1/new/CPU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'main' (16#1) [D:/code/project_8/project_8.srcs/sources_1/imports/new/main.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3973.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 3983.617 ; gain = 10.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 3983.617 ; gain = 10.582
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/project_8/project_8.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp' for cell 'nolabel_line22/nolabel_line74'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/project_8/project_8.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.dcp' for cell 'nolabel_line22/nolabel_line93'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 4008.074 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1600 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/code/project_8/project_8.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/code/project_8/project_8.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 4008.074 ; gain = 35.039
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  5 16:44:03 2023...

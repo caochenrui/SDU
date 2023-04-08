@@ -1,0 +1,462 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2848
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1117.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [D:/code/project_9/project_9.srcs/sources_1/imports/new/main.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Serial_Debug_Unit' [D:/code/project_9/project_9.srcs/sources_1/imports/new/Serial_Debug_Unit_v6.v:1]
+INFO: [Synth 8-6157] synthesizing module 'I_O' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/I_O.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SCAN' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/SCAN_v2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SCAN' (1#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/SCAN_v2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PRINT' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/PRINT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PRINT' (2#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/PRINT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RX' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/RX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RX' (3#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/RX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TX' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SOR' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/SOR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SOR' (4#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/SOR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CNT' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/CNT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CNT' (5#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/CNT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RDY' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/RDY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RDY' (6#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/RDY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TX' (7#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/TX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'I_O' (8#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/I_O.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PRDI' [D:/code/project_9/project_9.srcs/sources_1/imports/new/PRDI.v:23]
+INFO: [Synth 8-226] default block is never used [D:/code/project_9/project_9.srcs/sources_1/imports/new/PRDI.v:388]
+INFO: [Synth 8-6155] done synthesizing module 'PRDI' (9#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/PRDI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSMLOAD' [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:126]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'FSMLOAD' (10#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cpu_control_unit' [D:/code/project_9/project_9.srcs/sources_1/imports/new/cpu_control_unit_v1.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/cpu_control_unit_v1.v:102]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/cpu_control_unit_v1.v:99]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/cpu_control_unit_v1.v:253]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_control_unit' (11#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/cpu_control_unit_v1.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/Serial_Debug_Unit_v6.v:158]
+INFO: [Synth 8-6155] done synthesizing module 'Serial_Debug_Unit' (12#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/Serial_Debug_Unit_v6.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/code/project_9/project_9.srcs/sources_1/imports/new/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/code/project_9/project_9.runs/synth_1/.Xil/Vivado-11648-LAPTOP-FUP56MSR/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (13#1) [D:/code/project_9/project_9.runs/synth_1/.Xil/Vivado-11648-LAPTOP-FUP56MSR/realtime/dist_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (12) of module 'dist_mem_gen_0' [D:/code/project_9/project_9.srcs/sources_1/imports/new/CPU.v:68]
+WARNING: [Synth 8-689] width (32) of port connection 'dpra' does not match port width (12) of module 'dist_mem_gen_0' [D:/code/project_9/project_9.srcs/sources_1/imports/new/CPU.v:70]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_1' [D:/code/project_9/project_9.runs/synth_1/.Xil/Vivado-11648-LAPTOP-FUP56MSR/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_1' (14#1) [D:/code/project_9/project_9.runs/synth_1/.Xil/Vivado-11648-LAPTOP-FUP56MSR/realtime/dist_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (10) of module 'dist_mem_gen_1' [D:/code/project_9/project_9.srcs/sources_1/imports/new/CPU.v:79]
+WARNING: [Synth 8-689] width (32) of port connection 'dpra' does not match port width (10) of module 'dist_mem_gen_1' [D:/code/project_9/project_9.srcs/sources_1/imports/new/CPU.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (15#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/CPU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'main' (16#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/main.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1117.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1117.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1117.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1117.695 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/code/project_9/project_9.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_0_in_context.xdc] for cell 'nolabel_line30/nolabel_line78'
+Finished Parsing XDC File [d:/code/project_9/project_9.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_0_in_context.xdc] for cell 'nolabel_line30/nolabel_line78'
+Parsing XDC File [d:/code/project_9/project_9.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'nolabel_line30/nolabel_line67'
+Finished Parsing XDC File [d:/code/project_9/project_9.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'nolabel_line30/nolabel_line67'
+Parsing XDC File [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/code/project_9/project_9.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/code/project_9/project_9.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1159.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1159.105 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1159.105 ; gain = 41.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1159.105 ; gain = 41.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for nolabel_line30/nolabel_line78. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for nolabel_line30/nolabel_line67. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1159.105 ; gain = 41.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'SCAN'
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'PRINT'
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'RX'
+INFO: [Synth 8-802] inferred FSM for state register 's_reg' in module 'FSMLOAD'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cpu_control_unit'
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'Serial_Debug_Unit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                              000 |                              000
+                    word |                              001 |                              001
+                     OK1 |                              010 |                              010
+                    byte |                              011 |                              011
+                     OK2 |                              100 |                              100
+                complete |                              101 |                              101
+                   space |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'SCAN'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                              000 |                              000
+                    word |                              001 |                              001
+                     OK1 |                              010 |                              010
+                    byte |                              011 |                              011
+                     OK2 |                              100 |                              100
+                complete |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'PRINT'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                              000 |                              000
+                   Start |                              001 |                              001
+                     Bit |                              010 |                              010
+                   Shift |                              011 |                              011
+                    Save |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'RX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                           000001 |                             0000
+                FOURTEEN |                           000010 |                             1110
+                     ONE |                           000100 |                             0001
+                     TWO |                           001000 |                             0010
+                     SIX |                           010000 |                             0110
+                   SEVEN |                           100000 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_reg' using encoding 'one-hot' in module 'FSMLOAD'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00000 |                            00000
+                    STEP |                            00001 |                            00001
+                      GO |                            00010 |                            00010
+                    BP1W |                            00011 |                            00011
+                    BP1P |                            00100 |                            00100
+                    BP2W |                            00101 |                            00101
+                    BP2P |                            00110 |                            00110
+                    BP3W |                            00111 |                            01000
+                    BP3P |                            01000 |                            00111
+                    BP4W |                            01001 |                            01010
+                    BP4P |                            01010 |                            01001
+                    BP5W |                            01011 |                            01100
+                    BP5P |                            01100 |                            01011
+                    BP6W |                            01101 |                            01110
+                    BP6P |                            01110 |                            01101
+                    BP7W |                            01111 |                            10000
+                    BP7P |                            10000 |                            01111
+                    BP8W |                            10001 |                            10010
+                    BP8P |                            10010 |                            10001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cpu_control_unit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                LOADINST |                   00000000000001 |                           000000
+                 GETINST |                   00000000000010 |                           001100
+                WAITINST |                   00000000000100 |                           000001
+                  DEINST |                   00000000001000 |                           000010
+             WAITPIN_LID |                   00000000010000 |                           000011
+               CLEAN_LID |                   00000000100000 |                           001101
+                  IN_LID |                   00000001000000 |                           001010
+                WAIT_LID |                   00000010000000 |                           001011
+            WAITPIN_PRDI |                   00000100000000 |                           000100
+            WAITPIN_TBGH |                   00001000000000 |                           000101
+                 IN_TBGH |                   00010000000000 |                           001000
+               WAIT_TBGH |                   00100000000000 |                           001001
+                 IN_PRDI |                   01000000000000 |                           000110
+               WAIT_PRDI |                   10000000000000 |                           000111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'one-hot' in module 'Serial_Debug_Unit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1159.105 ; gain = 41.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 8     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 8     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 6     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 64    
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   7 Input   32 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 38    
+	   4 Input   32 Bit        Muxes := 5     
+	  17 Input   32 Bit        Muxes := 1     
+	  19 Input   32 Bit        Muxes := 2     
+	  14 Input   32 Bit        Muxes := 2     
+	  33 Input   32 Bit        Muxes := 2     
+	  14 Input   14 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 18    
+	   8 Input   14 Bit        Muxes := 1     
+	   3 Input   14 Bit        Muxes := 1     
+	  10 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	  16 Input   11 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 3     
+	   4 Input    9 Bit        Muxes := 1     
+	   7 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
+	 256 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 1     
+	  16 Input    6 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 5     
+	   2 Input    5 Bit        Muxes := 18    
+	   4 Input    5 Bit        Muxes := 2     
+	  19 Input    5 Bit        Muxes := 2     
+	  46 Input    5 Bit        Muxes := 1     
+	  23 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 30    
+	   7 Input    4 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 3     
+	   5 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 28    
+	   7 Input    3 Bit        Muxes := 3     
+	  14 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 4     
+	  16 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	  17 Input    3 Bit        Muxes := 1     
+	   9 Input    3 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 16    
+	   5 Input    2 Bit        Muxes := 5     
+	   8 Input    2 Bit        Muxes := 2     
+	  14 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 59    
+	   7 Input    1 Bit        Muxes := 17    
+	   6 Input    1 Bit        Muxes := 6     
+	   5 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 3     
+	  16 Input    1 Bit        Muxes := 14    
+	  11 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+	  19 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 2     
+	  14 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 1159.105 ; gain = 41.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|cpu_control_unit | type_tx    | 32x1          | LUT            | 
+|cpu_control_unit | req_tx     | 32x1          | LUT            | 
+|cpu_control_unit | type_tx    | 32x1          | LUT            | 
+|cpu_control_unit | req_tx     | 32x1          | LUT            | 
++-----------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 1159.105 ; gain = 41.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1159.105 ; gain = 41.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1189.832 ; gain = 72.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 1203.379 ; gain = 85.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 1203.379 ; gain = 85.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 1203.379 ; gain = 85.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 1203.379 ; gain = 85.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 1203.379 ; gain = 85.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 1203.379 ; gain = 85.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
+|2     |dist_mem_gen_1 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |dist_mem_gen |     2|
+|3     |BUFG         |     4|
+|4     |CARRY4       |   115|
+|5     |LUT1         |    13|
+|6     |LUT2         |   410|
+|7     |LUT3         |   340|
+|8     |LUT4         |   321|
+|9     |LUT5         |   335|
+|10    |LUT6         |  2099|
+|11    |MUXF7        |   212|
+|12    |MUXF8        |    85|
+|13    |FDCE         |  1795|
+|14    |FDPE         |    48|
+|15    |FDRE         |   197|
+|16    |IBUF         |     3|
+|17    |OBUF         |    17|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 1203.379 ; gain = 85.684
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:56 . Memory (MB): peak = 1203.379 ; gain = 44.273
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 1203.379 ; gain = 85.684
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1215.395 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 412 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1219.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a55b87c8
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 1219.199 ; gain = 101.504
+INFO: [Common 17-1381] The checkpoint 'D:/code/project_9/project_9.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  6 20:33:16 2023...

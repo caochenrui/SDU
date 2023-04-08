@@ -1,0 +1,319 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Apr  8 17:42:15 2023
+# Process ID: 4328
+# Current directory: D:/code/project_9
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17680 D:\code\project_9\project_9.xpr
+# Log file: D:/code/project_9/vivado.log
+# Journal file: D:/code/project_9\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/code/project_9/project_9.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/SCAN.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/code/project_9/project_9.srcs/sources_1/imports/new/Serial_Debug_Unit.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1117.289 ; gain = 0.000
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/code/project_9/project_9.srcs/sources_1/imports/new/Serial_Debug_Unit.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/SCAN.v] -no_script -reset -force -quiet
+remove_files  {D:/code/project_9/project_9.srcs/sources_1/imports/new/Serial_Debug_Unit.v D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/SCAN.v}
+set_property top FSMLOAD [current_fileset]
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FSMLOAD
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1591.453 ; gain = 264.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FSMLOAD' [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:126]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'FSMLOAD' (1#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1642.137 ; gain = 315.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1642.137 ; gain = 315.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1642.137 ; gain = 315.008
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1642.137 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rxd'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'txd'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:219]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1747.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1876.785 ; gain = 549.656
+8 Infos, 18 Warnings, 18 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1876.785 ; gain = 759.496
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1917.055 ; gain = 25.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FSMLOAD' [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:126]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'FSMLOAD' (1#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1964.969 ; gain = 73.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1964.969 ; gain = 73.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1964.969 ; gain = 73.445
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1970.148 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rxd'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'txd'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:219]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1970.148 ; gain = 78.625
+set_property top Serial_Debug_Unit [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1970.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Serial_Debug_Unit' [D:/code/project_9/project_9.srcs/sources_1/imports/new/Serial_Debug_Unit_v6.v:1]
+INFO: [Synth 8-6157] synthesizing module 'I_O' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/I_O.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SCAN' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/SCAN_v2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SCAN' (1#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/SCAN_v2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PRINT' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/PRINT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PRINT' (2#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/PRINT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RX' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/RX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RX' (3#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/RX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TX' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SOR' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/SOR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SOR' (4#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/SOR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CNT' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/CNT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CNT' (5#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/CNT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RDY' [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/RDY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RDY' (6#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/RDY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TX' (7#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/TX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'I_O' (8#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/I_O.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PRDI' [D:/code/project_9/project_9.srcs/sources_1/imports/new/PRDI.v:23]
+INFO: [Synth 8-226] default block is never used [D:/code/project_9/project_9.srcs/sources_1/imports/new/PRDI.v:388]
+INFO: [Synth 8-6155] done synthesizing module 'PRDI' (9#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/PRDI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSMLOAD' [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:126]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'FSMLOAD' (10#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/FSMLOAD_v1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cpu_control_unit' [D:/code/project_9/project_9.srcs/sources_1/imports/new/cpu_control_unit_v1.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/cpu_control_unit_v1.v:102]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/cpu_control_unit_v1.v:99]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/cpu_control_unit_v1.v:253]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_control_unit' (11#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/cpu_control_unit_v1.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/project_9/project_9.srcs/sources_1/imports/new/Serial_Debug_Unit_v6.v:158]
+INFO: [Synth 8-6155] done synthesizing module 'Serial_Debug_Unit' (12#1) [D:/code/project_9/project_9.srcs/sources_1/imports/new/Serial_Debug_Unit_v6.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1988.762 ; gain = 18.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2011.656 ; gain = 41.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2011.656 ; gain = 41.508
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2032.094 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/code/project_9/project_9.srcs/constrs_1/imports/code/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2032.094 ; gain = 61.945
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  8 19:52:31 2023...

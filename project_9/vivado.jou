@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Apr  8 17:42:15 2023
+# Process ID: 4328
+# Current directory: D:/code/project_9
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17680 D:\code\project_9\project_9.xpr
+# Log file: D:/code/project_9/vivado.log
+# Journal file: D:/code/project_9\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/code/project_9/project_9.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/code/project_9/project_9.srcs/sources_1/imports/new/Serial_Debug_Unit.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/SCAN.v] -no_script -reset -force -quiet
+remove_files  {D:/code/project_9/project_9.srcs/sources_1/imports/new/Serial_Debug_Unit.v D:/code/project_9/project_9.srcs/sources_1/imports/new/IO/SCAN.v}
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FSMLOAD [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Serial_Debug_Unit [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design

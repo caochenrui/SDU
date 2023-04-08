@@ -1,0 +1,10 @@
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source D:/code/project_9/project_9.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/code/project_9/project_9.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Tue Apr  4 12:21:35 2023. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 86.461 ; gain = 4.848
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr  4 12:21:35 2023...
