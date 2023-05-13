@@ -2,6 +2,7 @@
 
 module CPU(
     input clk_cpu,
+    
     input clk_ld,
     input rstn,
     input ld,
